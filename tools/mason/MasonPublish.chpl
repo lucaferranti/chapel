@@ -841,7 +841,7 @@ proc masonTomlFileCheck(projectHome: string) {
   if tomlFile.pathExists("brick.name") then name = true; else missingFields.pushBack('name');
   if tomlFile.pathExists("brick.version") then version = true; else missingFields.pushBack('version');
   if tomlFile.pathExists("brick.chplVersion") then chplVersion = true; else missingFields.pushBack('chplVersion');
-  if tomlFile.pathExists("brick.source") then source = true; else missingFields.pushBack('source');
+  //if tomlFile.pathExists("brick.source") then source = true; else missingFields.pushBack('source');
   if tomlFile.pathExists("brick.license") then license = true; else missingFields.pushBack('license');
   if tomlFile.pathExists("brick.authors") then author = true; else missingFields.pushBack('authors');
   if name && version && chplVersion && source
